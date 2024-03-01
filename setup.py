@@ -2,8 +2,8 @@ from setuptools import setup
 
 with open('README.md', 'r', encoding='utf-8') as f:
     ABOUT = f.read()
-    
-    
+
+
 CLASSIFIERS = [
     'Development Status :: 4 - Beta',
     'Environment :: Plugins',
@@ -17,18 +17,18 @@ CLASSIFIERS = [
 ]    
 
 
-setup(name="ARFF",
-      packages=["arff.widgets"],
-      package_data={"arff.widgets": ["icons/*.svg", "icons/*.png"]},
-      entry_points={"orange.widgets": "ARFF = arff.widgets"},
-      version="1.0.0",
+setup(name="OrangeARFF",
+      packages=["OrangeARFF"],
+      package_data={"OrangeARFF": []},
+      entry_points={"orange.widgets": "OrangeARFF = OrangeARFF"},
+      version="1.0.2",
       author="Gualberto Asencio Cortés",
       author_email="guaasecor@upo.es",
-      keywords=['orange3 add-on','arff','data mining','orange','addon'],
+      keywords=['orange3 add-on','OrangeARFF','Orange.data.io mining','orange','addon'],
       url="https://github.com/gualbe/Orange-ARFF",
       license="GPL3+",
       long_description=ABOUT,
       long_description_content_type='text/markdown',
-      description="AFFF add-on for Orange 3 data mining software.",
+      description="AFFF add-on for Orange 3 Orange.data.io mining software.",
       classifiers=CLASSIFIERS,
       )

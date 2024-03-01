@@ -1,12 +1,12 @@
 Metadata-Version: 2.1
-Name: ARFF
-Version: 1.0.0
-Summary: AFFF add-on for Orange 3 data mining software.
+Name: OrangeARFF
+Version: 1.0.2
+Summary: AFFF add-on for Orange 3 Orange.data.io mining software.
 Home-page: https://github.com/gualbe/Orange-ARFF
 Author: Gualberto Asencio Cortés
 Author-email: guaasecor@upo.es
 License: GPL3+
-Keywords: orange3 add-on,arff,data mining,orange,addon
+Keywords: orange3 add-on,OrangeARFF,Orange.data.io mining,orange,addon
 Classifier: Development Status :: 4 - Beta
 Classifier: Environment :: Plugins
 Classifier: Programming Language :: Python
@@ -22,7 +22,7 @@ License-File: LICENSE
 Orange3 ARFF
 ===============
 
-ARFF add-on for [Orange] 3 data mining software provides load and save nodes to retrieve and store data in the Weka ARFF file format.
+ARFF add-on for [Orange] 3 data mining software provides load and save functionality to retrieve and store data in the Weka ARFF file format. **No new widgets are provided in this package**. The Orange native nodes **File** and **Save Data** will have full support to read/write ARFF files (.arff).
 
 [Orange]: https://orangedatamining.com/
 
@@ -31,15 +31,13 @@ Installation
 
 ### Orange add-on installer
 
-Install from Orange add-on installer through Options -> Add-ons.
-
-![Installation](https://github.com/alervgr/Orange-TimeFeatures/blob/main/imgs/installation.png?raw=true)
+Install from Orange add-on installer through Options -> Add-ons. Write the name "**OrangeARFF**" and press "**Add**" button.
 
 ### Using pip
 
 To install the add-on with pip use
 
-    pip install TimeFeatures
+    pip install OrangeARFF
 
 To install the add-on from source, run
 
@@ -60,15 +58,14 @@ which is sometimes preferable as you can *pip uninstall* packages later.
 
 If using Anaconda Python distribution, simply run
 
-    pip install TimeFeatures
+    pip install OrangeARFF
 
 **Required Dependencies**:
 * numpy>=1.22.4
 * AnyQt>=0.2.0
-* Orange3>=3.34.0
-* PyQt5>=5.15.6
+* Orange3>=3.30.0
+* PyQt6>=6.5.0
 * scipy>=1.7.3
-* Orange3-Network>=1.8.0
 
 Usage
 -----
@@ -81,11 +78,3 @@ use
 or
 
     python3 -m Orange.canvas
-
-New widgets are in the toolbox bar under Time-Features section.
-
-Workflow Example
------
-This is an example of how you can use this add-on.
-
-![Workflow](https://github.com/alervgr/Orange-TimeFeatures/blob/main/imgs/workflow.png?raw=true)
